@@ -1,10 +1,7 @@
 class String
 
   define_method(:scrabble) do
-
-    # score_ones = 0
     score = 0
-
     ten_point = ["q", "z"]
     eight_point = ["j", "x"]
     five_point = ["k"]
@@ -26,12 +23,11 @@ class String
       elsif eight_point.include?(l)
         score += 8
       elsif ten_point.include?(l)
-        score += 10  
+        score += 10
       else
         score += 1
       end
     end
-
     score
   end
 end
